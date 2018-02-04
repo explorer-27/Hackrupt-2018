@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signup_lowres"
+    tools:context="com.example.ashu.podlogin.SignUpActivity">
+
+
+    <EditText
+        android:id="@+id/id_et_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="118dp"
+        android:hint="User-id"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/name_et_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_et_signup"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="15dp"
+        android:hint="Full Name"
+        android:singleLine="true" />
+
+    <Spinner
+        android:id="@+id/categorySpinner"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name_et_signup"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="18dp"
+        android:addStatesFromChildren="false"
+        android:entries="@array/category_array"></Spinner>
+
+    <EditText
+        android:id="@+id/mobileNo_et_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/categorySpinner"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="20dp"
+        android:hint="Mobile No."
+        android:inputType="number"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/email_et_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mobileNo_et_signup"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="15dp"
+        android:hint="Email-Id"
+        android:inputType="textEmailAddress"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/pwd_et_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email_et_signup"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="5dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/signup_tv_signup"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/pwd_et_signup"
+        android:layout_marginLeft="85dp"
+        android:layout_marginRight="85dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#ffffff" />
+</RelativeLayout>

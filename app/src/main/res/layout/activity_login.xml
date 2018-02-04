@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_lowres"
+    tools:context="com.example.ashu.podlogin.LoginActivity">
+
+    <EditText
+        android:id="@+id/login_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="47dp"
+        android:layout_marginRight="47dp"
+        android:layout_marginTop="195dp"
+        android:hint="User-Id" />
+
+    <EditText
+        android:id="@+id/pwd_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/login_et"
+        android:layout_alignStart="@+id/login_et"
+        android:layout_below="@+id/login_et"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="32dp"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/frgt_pwd_tv"
+        android:layout_width="150dp"
+        android:layout_height="5dp"
+        android:layout_below="@+id/pwd_et"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/login_tv"
+        android:layout_width="160dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/frgt_pwd_tv"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="35dp"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/singup_tv"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/login_tv"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="75dp"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

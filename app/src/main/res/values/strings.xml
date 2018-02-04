@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PodLogin</string>
+
+    <string-array name="category_array">
+        <item>Student</item>
+        <item>Staff Member</item>
+        <item>Parent</item>
+
+    </string-array>
+</resources>
